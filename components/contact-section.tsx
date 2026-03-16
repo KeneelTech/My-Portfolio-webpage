@@ -104,6 +104,17 @@ export function ContactSection() {
           formRef.current!,
           "CqSpYuo9s2NMf7gWb"      // from EmailJS dashboard
       )
+
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formRef.current?.name.valueOf,
+          email: formRef.current?.email.value,
+          message: formRef.current?.message.value,
+        })
+      })
+
       setStatus("success")
       formRef.current?.reset()
       setTimeout(() => setStatus("idle"), 5000)
