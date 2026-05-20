@@ -109,7 +109,7 @@ export function ContactSection() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: formRef.current?.name.valueOf,
+          name: formRef.current?.name2.value,
           email: formRef.current?.email.value,
           message: formRef.current?.message.value,
         })
@@ -154,8 +154,8 @@ export function ContactSection() {
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <EncryptedInput
                 label="Name"
-                id="name"
-                name="name"
+                id="name2"
+                name="name2"
                 placeholder="Your name"
                 delay={0.1}
               />
