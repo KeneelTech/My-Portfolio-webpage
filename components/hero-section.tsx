@@ -118,7 +118,7 @@ export function HeroSection() {
         >
           <div className="relative h-28 w-28 overflow-hidden rounded-full border-2 border-[rgba(0,240,255,0.3)] md:h-36 md:w-36">
             <Image
-              src="/images/profile.jpg"
+              src="/images/keneel's photo.jpeg"
               alt="Keneel Thomas profile photo"
               fill
               className="object-cover"
